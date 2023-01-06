@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no, viewport-fit=cover">
+    <title>20001040622李婉甄 发现</title>
+    <link rel="stylesheet" href="./css/pub.css">
+    <link rel="stylesheet" href="./font/iconfont.css">
+    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./js/swiper/swiper-bundle.min.css">
+    <style>
+        body{
+            background-color: #eee;
+        }
+        #top{
+            margin: 8px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #top span:nth-of-type(1){
+            padding: 10px;
+            font-size: 30px;
+            font-weight: bold;
+            flex-grow: 1;
+            text-align: left;
+        }
+        #top span:nth-of-type(2){
+            padding: 10px;
+            font-size: 30px;
+            text-align: center;
+        }
+        #section{
+            margin: 15px;
+        }
+        #section img{
+            width: 100%;
+            border-radius: 10px;
+        }
+        #box{
+            background-color: #fff;
+            margin: 15px 0;
+            border-radius: 10px;
+        }
+        .swiper-slide{
+            text-align: center;
+            padding: 10px 0;
+        }
+        .mySwiper span{
+            font-size: 40px;
+        }
+        .mySwiper p{
+            font-size: 16px;
+            padding: 10px 0;
+        } 
+        #box ul{
+            display: flex;
+        }
+        #box li{
+            border-radius: 10px;
+            margin: 8px;
+            width: 33%;
+            display: flex;
+            flex-wrap: wrap;
+            background-color: #eee;
+        }
+        #box li span:nth-of-type(1){
+            font-size: 20px;
+            flex-grow: 1;
+            width: 100%;
+            text-align: center;
+            padding: 5px 0;
+        }
+        #box li span:nth-of-type(2){
+            flex-grow: 1;
+            font-size: 40px;
+            text-align: right;
+            padding: 5px;
+        }
+        #box1{
+            margin: 15px;
+        }
+        #box1 span{
+            font-size: 20px;
+            font-weight: bold;
+        }
+        #box1 ul{
+            display: flex;
+        }
+        #box1 li{
+            border-radius: 10px;
+            margin: 8px;
+            width: 33%;
+            display: flex;
+            flex-wrap: wrap;
+            padding: 8px;
+        }
+        #box1 li:nth-of-type(1){
+            background-color: rgb(175, 255, 122);
+        }
+        #box1 li:nth-of-type(1) p:nth-of-type(1){
+            color: rgb(64, 154, 4);
+            font-size: 20px;
+            font-weight: bold;
+        }
+        #box1 li:nth-of-type(1) p:nth-of-type(2){
+            color: rgb(64, 154, 4);
+            font-size: 14px;
+        }
+        #box1 li:nth-of-type(2){
+            background-color: rgb(255, 235, 122);
+        }
+        #box1 li:nth-of-type(2) p:nth-of-type(1){
+            color: rgb(187, 172, 84);
+            font-size: 20px;
+            font-weight: bold;
+        }
+        #box1 li:nth-of-type(2) p:nth-of-type(2){
+            color: rgb(187, 172, 84);
+            font-size: 14px;
+        }
+        #box1 li:nth-of-type(3){
+            background-color: rgb(250, 178, 184);
+        }
+        #box1 li:nth-of-type(3) p:nth-of-type(1){
+            color: rgb(251, 98, 110);
+            font-size: 20px;
+            font-weight: bold;
+        }
+        #box1 li:nth-of-type(3) p:nth-of-type(2){
+            color:  rgb(251, 98, 110);
+            font-size: 14px;
+        }
+        #box2{
+            margin: 15px;
+        }
+        #box2 span{
+            font-size: 20px;
+            font-weight: bold;
+        }
+        #box2 ul{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        #box2 li{
+            border-radius: 10px;
+            width: 47%;
+            display: flex;
+            background-color: #fff;
+            margin: 5px;
+        }
+        #box2 img{
+            width: 30%;
+            border-radius: 10px;
+            flex-grow: 1;
+        }
+        #box2 div{
+            width: 70%;
+            padding: 8px 5px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        #box2 div span:nth-of-type(1){
+            font-weight: bold;
+            font-size: 18px;
+            width: 100%;
+        }
+        #box2 div span:nth-of-type(2){
+            color: #999;
+            font-size: 15px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="top">
+            <span>发现</span>
+            <span class="iconfont icon-wode"></span>
+        </div>
+    </header>
+    <section id="section">
+        <img src="./img/30.jpg">
+        <div id="box">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <span class="iconfont icon-meiriyiwen"></span>
+                    <p>每日一句</p>
+                  </div>
+                  <div class="swiper-slide">
+                    <span class="iconfont icon-heiban"></span>
+                    <p>小课堂</p>
+                  </div>
+                  <div class="swiper-slide">
+                    <span class="iconfont icon-qizhi"></span>
+                    <p>斩家活动</p>
+                  </div>
+                  <div class="swiper-slide">
+                    <span class="iconfont icon-yuedu1"></span>
+                    <p>爱阅读</p>
+                  </div>
+                  <div class="swiper-slide">
+                    <span class="iconfont icon-star"></span>
+                    <p>猜你喜欢</p>
+                  </div>
+                </div>
+            </div>
+            <ul>
+                <li>
+                    <span>单词对战 ></span>
+                    <span class="iconfont icon-duizhan2x"></span>
+                </li>
+                <li>
+                    <span>同桌 ></span>
+                    <span class="iconfont icon-huoban"></span>
+                </li>
+                <li>
+                    <span>小班 ></span>
+                    <span class="iconfont icon-banjiketang"></span>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <main>
+        <div id="box1">
+            <span>专项突破</span>
+            <ul>
+                <li>
+                    <p>斩家四级</p>
+                    <p>高效备考四级</p>
+                </li>
+                <li>
+                    <p>口语专项</p>
+                    <p>轻松学口语</p>
+                </li>
+                <li>
+                    <p>雅思屠鸭</p>
+                    <p>轻松7+</p>
+                </li>
+            </ul>
+        </div>
+        <div id="box2">
+            <span>热门好课</span>
+            <ul>
+                <li>
+                    <div>
+                        <span>百词斩雅思</span>
+                        <span>高效屠鸭</span>
+                    </div>
+                    <img src="./img/05.jpg">
+                </li>
+                <li>
+                    <div>
+                        <span>百词斩口语</span>
+                        <span>高效学口语</span>
+                    </div>
+                    <img src="./img/06.jpg">
+                </li>
+                <li>
+                    <div>
+                        <span>外刊阅读</span>
+                        <span>阅读技能提升</span>
+                    </div>
+                    <img src="./img/07.jpg">
+                </li>
+                <li>
+                    <div>
+                        <span>趣味听力</span>
+                        <span>看电影学听力</span>
+                    </div>
+                    <img src="./img/08.jpg">
+                </li>
+            </ul>
+        </div>
+    </main>
+    <nav id="nav">
+        <ul class="nlist">
+        </ul>
+    </nav>
+    <script src="./js/nav.js"></script>
+    <script src="./js/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          slidesPerView: "4",
+          spaceBetween: 0,
+     });
+    </script>
+</body>
+</html>

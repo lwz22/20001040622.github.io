@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no, viewport-fit=cover">
+    <title>20001040622李婉甄 商城</title>
+    <link rel="stylesheet" href="./css/pub.css">
+    <link rel="stylesheet" href="./font/iconfont.css">
+    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./js/swiper/swiper-bundle.min.css">
+    <style>
+        body{
+            background-color: #eee;
+        }
+        .icon {
+            width: 1em;
+            height: 1em;
+            vertical-align: -0.15em;
+            fill: currentColor;
+            overflow: hidden;
+        }
+        #head span:first-child{
+            padding: 10px;
+            font-size: 30px;
+            font-weight: bold;
+            flex-grow: 1;
+            text-align: left;
+        }
+        #top{
+            margin: 8px 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #top div{
+            border-radius: 20px;
+            color: #999;
+            background-color: #ddd;
+            flex-grow: 1;
+        }
+        #top span:nth-of-type(1){
+            font-size: 22px;
+            padding: 5px;
+        }
+        #top span:nth-of-type(2){
+            font-size: 22px;
+            padding: 5px;
+        }
+        .mySwiper img{
+            width: 100%;
+        }
+        .list{
+            display: flex;
+            margin: 15px;
+        }
+        .list li{
+            margin: 8px;
+            width: 25%;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .list svg{
+            font-size: 40px;
+            flex-grow: 1;
+            text-align: center;
+        }
+        .list p{
+            font-size: 20px;
+            flex-grow: 1;
+            text-align: center;
+            color: #666;
+        }
+        #box{
+            margin: 15px;
+        }
+        #box span{
+            font-size: 22px;
+            font-weight: bold;
+        }
+        #box ul{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        #box li{
+            border-radius: 10px;
+            width: 24%;
+            display: flex;
+            flex-wrap: wrap;
+            background-color: #fff;
+            margin: 10px 3px 0 0;
+        }
+        #box img{
+            width: 100%;
+            flex-grow: 1;
+        }
+        #box p{
+            font-size: 16px;
+            font-weight: bold;
+            padding: 3px;
+        }
+        .goods{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .goods>li{
+            border-radius: 8px;
+            margin: 5px 0 5px 5px;/* 上 右 下 左 */
+            width: 48%;
+        }
+        .goodsbox{
+            
+            flex-grow: 1;
+            display: flex;
+            flex-wrap: wrap;
+            background-color: #fff;
+            border-radius: 10px;
+        }
+        .goodsbox img{
+            width: 100%;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        .goodsbox span:nth-of-type(1){
+            padding: 5px;
+            font-size: 18px;
+        }
+        .goodsbox span:nth-of-type(2){
+            padding: 5px;
+            font-size: 16px;
+            color: rgb(218, 174, 0);
+        }
+        .price{
+            flex-grow: 1;
+            display: flex;
+        }
+        .price span:nth-of-type(1){
+            padding: 5px;
+            font-size: 20px;
+            color: rgb(255, 72, 0);
+        }
+        .price span:nth-of-type(2){
+            font-size: 16px;
+            color: #ccc;
+            flex-grow: 1;
+            text-align: right;
+        }
+        #up{
+            position: fixed;
+            right: 10px;
+            bottom: 100px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 50%;
+            border: .7px solid #ccc;
+            display: none;
+        }
+        #up span{
+            font-size: 20px;
+        }
+    </style>
+    <header id="head">
+        <span>商城</span>
+        <div id="top">
+            <div>
+                <span class="iconfont icon-sousuo"></span>
+                <span>14天通关考研长难句</span>
+            </div>
+            <span class="iconfont icon-kefu"></span>
+            <span class="iconfont icon-wode"></span>
+        </div>
+    </header>
+    <section>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./img/31.jpg">
+              </div>
+              <div class="swiper-slide">
+                    <img src="./img/32.jpg">
+              </div>
+              <div class="swiper-slide">
+                    <img src="./img/33.jpg">
+              </div>
+              <div class="swiper-slide">
+                    <img src="./img/34.jpg">
+              </div>
+              <div class="swiper-slide">
+                <img src="./img/35.jpg">
+              </div>
+              <div class="swiper-slide">
+                    <img src="./img/36.jpg">
+              </div>
+              <div class="swiper-slide">
+                    <img src="./img/37.jpg">
+              </div>
+              <div class="swiper-slide">
+                    <img src="./img/38.jpg">
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+    </section>
+    <section>
+        <ul class="list">
+            <li>
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-wenju"></use>
+                </svg>
+                <p>文具</p>
+            </li>
+            <li>
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-ziyuan"></use>
+                </svg>
+                <p>备考</p>
+            </li>
+            <li>
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-tubiaozhizuomobanyihuifu-"></use>
+                </svg>
+                <p>生活</p>
+            </li>
+            <li>
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-lipin"></use>
+                </svg>
+                <p>全部</p>
+            </li>
+        </ul>
+        <div id="box">
+            <span>考试提分小助手</span>
+            <ul>
+                <li>
+                    <p>四级备考包</p>
+                    <img src="./img/39.jpg">
+                </li>
+                <li>
+                    <p>六级备考包</p>
+                    <img src="./img/40.jpg">
+                </li>
+                <li>
+                    <p>考研备考包</p>
+                    <img src="./img/41.jpg">
+                </li>
+                <li>
+                    <p>专升本</p>
+                    <img src="./img/42.jpg">
+                </li>
+            </ul>
+        </div>
+    </section>
+    <main>
+        <ul class="goods">
+
+        </ul>
+    </main>
+    <div id="up">
+        <span class="iconfont icon-xiangshang1"></span>
+    </div>
+    <nav id="nav">
+        <ul class="nlist">
+        </ul>
+    </nav>
+    <script src="./js/nav.js"></script>
+    <script src="./font/iconfont.js"></script>
+    <script src="./js/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+        pagination: {
+          el: ".swiper-pagination",
+        },
+      });
+
+      var jarr=[{
+        picture:"./img/43.jpg",
+        title:"备考22年12月 大学英语四级考试备考包",
+        main:"备考一键全攻略",
+        price:"￥48.9",
+        hot:"3181人付款"
+    },{
+        picture:"./img/44.jpg",
+        title:"大学英语六级真题考包",
+        main:"10套真题试卷+超全解析",
+        price:"￥27.9",
+        hot:"1178人付款"
+    },{
+        picture:"./img/45.jpg",
+        title:"英语四级词汇书 CET4备考",
+        main:"备战英语四级",
+        price:"￥48.9",
+        hot:"3181人付款"
+    },{
+        picture:"./img/46.jpg",
+        title:"六级核心词汇 收录历年真题高频考词",
+        main:"备战英语六级",
+        price:"￥48.9",
+        hot:"3181人付款"
+    },{
+        picture:"./img/47.jpg",
+        title:"2022年大学英语四级听力专项训练",
+        main:"备考一键全攻略",
+        price:"￥24.9",
+        hot:"1.5万人付款"
+    },{
+        picture:"./img/48.jpg",
+        title:"2022年大学英语六级听力专项训练",
+        main:"备考一键全攻略",
+        price:"￥27.9",
+        hot:"6634人付款"
+    }]
+function insert(){
+var goods=document.querySelector(".goods");
+jarr.forEach((v,i)=>{
+    var nli=document.createElement("li");
+    nli.innerHTML=`
+    <div class="goodsbox">
+            <img src="${v.picture}">
+            <span>${v.title}</span>
+            <span>${v.main}</span>
+            <div class="price">
+                <span>${v.price}</span>
+                <span>${v.hot}</span>
+            </div>
+        </div>
+    `;
+    goods.appendChild(nli);
+})
+}
+    insert(jarr);
+
+    window.onscroll=()=>{
+            var st=document.documentElement.scrollTop;
+            console.log(st);
+            if(st>head.offsetHeight){
+                up.style.display="block";
+            }
+            else{
+                up.style.display="none";
+            }
+        }
+
+    var up = document.querySelector("#up");
+    up.addEventListener("click", () => {
+        scrollTo(0, 0);
+      });
+    </script>
+</body>
+</html>

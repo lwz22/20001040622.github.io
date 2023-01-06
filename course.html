@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no, viewport-fit=cover">
+    <title>20001040622李婉甄 课堂</title>
+    <link rel="stylesheet" href="./css/pub.css">
+    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./font/iconfont.css">
+    <style>
+        body{
+            background-color: #eee;
+        }
+        #top{
+            margin: 8px 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            
+        }
+        #top span{
+            border-radius: 10px;
+            padding: 5px 15px;
+            font-size: 20px;
+        }
+        #top span:nth-of-type(1){
+            background-color: #fff;
+            font-weight: bold;
+        }
+        #top span:nth-of-type(2){
+            background-color: #ddd;
+        }
+        .tab{
+            width: 100%;
+            margin: 0;
+        }
+        .tt{
+            display: flex;
+            border-bottom: .7px solid #ddd;
+        }
+        .tt span{
+            width: 20%;
+            padding: 10px 0;
+            text-align: center;
+            font-size: 18px;
+            flex-grow: 1;
+        }
+        .tt  .cur{
+            font-weight: bold;
+            border-bottom: 2px solid  rgb(4, 44, 246);;
+        }
+        .tc{
+            display: none;
+        }
+        .list li{
+            background-color: #fff;
+            border-radius: 10px;
+            margin: 15px;
+            display: flex;
+        }
+        .list img{
+            width: 30%;
+            border-radius: 10px;
+            margin: 10px;
+        }
+        .list div:nth-child(2){
+            width: 70%;
+            padding: 8px 5px;
+            flex-grow: 1;
+        }
+        .list div:nth-child(2) p{
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .tag span{
+            font-size: 16px;
+            background-color: rgba(79, 229, 255, 0.431);
+            padding: 5px;
+            border-radius: 5px;
+            color: rgb(57, 110, 216);
+        }
+        .price{
+            display: flex;
+        }
+        .price span{
+            padding: 8px;
+            font-size: 20px;
+            color: rgb(255, 77, 0);
+            width: 60%;
+        }
+        .price div{
+            
+            flex-grow: 1;
+            text-align: right;
+        }
+        .price div span{
+            padding: 8px 15px;
+            font-size: 18px;
+            color: #fff;
+            background-color: rgb(255, 77, 0);
+            border-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="top">
+            <span>精选</span>
+            <span>我的</span>
+        </div>
+    </header>
+    <main>
+        <div class="tab">
+            <div class="tt">
+                <span class="cur">推荐</span>
+                <span>免费学</span>
+                <span>四六级</span>
+                <span>技能提升</span>
+                <span>留学</span>
+            </div>
+            <div class="tc" style="display:block">
+                <ul class="list">
+                    
+                </ul>
+            </div>
+            <div class="tc">
+                <ul class="list">
+                    <li>
+                        <img src="./img/15.jpg">
+                        <div>
+                            <p>每天听力练习</p>
+                            <div class="tag"><span>每日更新</span></div>
+                            <div class="price">
+                                <span>免费</span>
+                                <div><span>去体验</span></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="./img/16.jpg">
+                        <div>
+                            <p>每天阅读练习</p>
+                            <div class="tag"><span>早晚免费学习</span></div>
+                            <div class="price">
+                                <span>免费</span>
+                                <div><span>去体验</span></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="./img/17.jpg">
+                        <div>
+                            <p>Excel易学实用小技巧</p>
+                            <div class="tag"><span>3分钟学</span></div>
+                            <div class="price">
+                                <span>免费</span>
+                                <div><span>去体验</span></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="./img/18.jpg">
+                        <div>
+                            <p>橙子老师讲四六级</p>
+                            <div class="tag"><span>英文学霸</span></div>
+                            <div class="price">
+                                <span>免费</span>
+                                <div><span>去体验</span></div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="tc">
+                <ul class="list">
+                    <li>
+                        <img src="./img/19.jpg">
+                        <div>
+                            <p>四级无忧备考营</p>
+                            <div class="tag"><span>系统规划</span></div>
+                            <div class="price">
+                                <span>50元</span>
+                                <div><span>去体验</span></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="./img/20.jpg">
+                        <div>
+                            <p>听力体验营</p>
+                            <div class="tag"><span>听力技巧解锁</span></div>
+                            <div class="price">
+                                <span>6元</span>
+                                <div><span>去体验</span></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="./img/21.jpg">
+                        <div>
+                            <p>六级考试大杀器</p>
+                            <div class="tag"><span>应试技巧</span></div>
+                            <div class="price">
+                                <span>50元</span>
+                                <div><span>去体验</span></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="./img/22.jpg">
+                        <div>
+                            <p>百词斩口语</p>
+                            <div class="tag"><span>专业知道</span></div>
+                            <div class="price">
+                                <span>6元</span>
+                                <div><span>去体验</span></div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="tc">
+                <ul class="list">
+                    <li>
+                        <img src="./img/23.jpg">
+                        <div>
+                            <p>编程未来新语言</p>
+                            <div class="tag"><span>每日更新</span></div>
+                            <div class="price">
+                                <span>1元</span>
+                                <div><span>去体验</span></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="./img/24.jpg">
+                        <div>
+                            <p>百词斩口语</p>
+                            <div class="tag"><span>专业指导</span></div>
+                            <div class="price">
+                                <span>6元</span>
+                                <div><span>去体验</span></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="./img/25.jpg">
+                        <div>
+                            <p>PPT高分攻略</p>
+                            <div class="tag"><span>万能审美公式</span></div>
+                            <div class="price">
+                                <span>1元</span>
+                                <div><span>去体验</span></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="./img/26.jpg">
+                        <div>
+                            <p>Excel基础技能</p>
+                            <div class="tag"><span>社团/实习</span></div>
+                            <div class="price">
+                                <span>1元</span>
+                                <div><span>去体验</span></div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="tc">
+                <ul class="list">
+                    <li>
+                        <img src="./img/27.jpg">
+                        <div>
+                            <p>雅思秘籍营</p>
+                            <div class="tag"><span>冲刺高分</span></div>
+                            <div class="price">
+                                <span>18元</span>
+                                <div><span>去体验</span></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="./img/24.jpg">
+                        <div>
+                            <p>百词斩口语</p>
+                            <div class="tag"><span>专业指导</span></div>
+                            <div class="price">
+                                <span>6元</span>
+                                <div><span>去体验</span></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="./img/28.jpg">
+                        <div>
+                            <p>外刊精读课</p>
+                            <div class="tag"><span>阅读技巧</span></div>
+                            <div class="price">
+                                <span>1元</span>
+                                <div><span>去体验</span></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="./img/29.jpg">
+                        <div>
+                            <p>场景英语体验</p>
+                            <div class="tag"><span>新课上线</span></div>
+                            <div class="price">
+                                <span>1元</span>
+                                <div><span>去体验</span></div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>  
+    </main>
+    <nav id="nav">
+        <ul class="nlist">
+        </ul>
+    </nav>
+    <script src="./js/nav.js"></script>
+    <script src="./js/tab.js"></script>
+    <script>
+        var jarr=[{
+        picture:"./img/11.jpg",
+        title:"编程未来新语言",
+        main:"真题训练",
+        price:"1元",
+        btn:"去体验"
+    },{
+        picture:"./img/12.jpg",
+        title:"新概念英语",
+        main:"基础提升",
+        price:"1元",
+        btn:"去体验"
+    },{
+        picture:"./img/13.jpg",
+        title:"口语练习",
+        main:"电影素材",
+        price:"免费",
+        btn:"去体验"
+    },{
+        picture:"./img/14.jpg",
+        title:"四级无忧备考营",
+        main:"系统规划",
+        price:"50元",
+        btn:"去体验"
+    }]
+
+        function insert(){
+        var list=document.querySelector(".list");
+        jarr.forEach((v,i)=>{
+            var nli=document.createElement("li");
+            nli.innerHTML=`
+            <img src="${v.picture}">
+            <div>
+                <p>${v.title}</p>
+                <div class="tag"><span>${v.main}</span></div>
+                <div class="price">
+                    <span>${v.price}</span>
+                    <div><span>${v.btn}</span></div>
+                </div>
+            </div>
+            `;
+            list.appendChild(nli);
+        })
+    }
+    insert(jarr);
+    </script>
+</body>
+</html>

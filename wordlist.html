@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no, viewport-fit=cover">
+    <title>20001040622李婉甄 单词列表</title>
+    <link rel="stylesheet" href="./css/pub.css">
+    <link rel="stylesheet" href="./font/iconfont.css">
+    <style>
+        #top{
+            margin: 8px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #top a{
+            font-size: 30px;
+            width: 15%;
+            text-align: center;
+        }
+        #top span:nth-of-type(1){
+            font-size: 22px;
+            flex-grow: 1;
+            width: 70%;
+            text-align: center;
+        }
+        #top span:nth-of-type(2){
+            font-size: 30px;
+            width: 15%;
+            text-align: center;
+        }
+        .tab{
+            width: 100%;
+            margin: 0;
+        }
+        .tt{
+            display: flex;
+        }
+        .tt span{
+            padding: 10px 0;
+            line-height: 18px;
+            text-align: center;
+            font-size: 18px;
+            flex-grow: 1;
+        }
+        .tt  .cur{
+            border-bottom: 1px solid #000;
+        }
+        .tc{
+            display: none;
+        }
+        #box{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        #box span:first-child{
+            margin-top: 100px;
+            margin-bottom: 20px;
+            font-size: 80px;
+            color: #ccc;
+            width: 100%;
+            text-align: center;
+        }
+        #box span:nth-child(2){
+            font-size: 20px;
+            padding: 10px;
+            color: #aaa;
+            width: 100%;
+            text-align: center;
+        }
+        #box span:last-child{
+            font-size: 20px;
+            color: #aaa;
+            width: 100%;
+            text-align: center;
+        }
+        .wordlist li{
+            border-bottom: 1px solid #ccc;
+            display: flex;
+            padding: 10px 5px;
+        }
+        .wordlist li span:first-child{
+            font-size: 18px;
+            width: 30%;
+        }
+        .wordlist li span:last-child{
+            font-size: 18px;
+            flex-grow: 1;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="top">
+            <a href="./index.html">
+                <span class="iconfont icon-xiangzuojiantou"></span>
+            </a>
+            <span>单词列表</span>
+            <span class="iconfont icon-yunduanxiazai"></span>
+        </div>
+    </header>
+    <main>
+        <div class="tab">
+            <div class="tt">
+                <span class="cur">已学单词</span>
+                <span>未学单词</span>
+                <span>已斩单词</span>
+            </div>
+            <div class="tc" style="display:block">
+                <div id="box">
+                    <span class="iconfont icon-jihua"></span>
+                    <span>暂无已学单词</span>
+                    <span>快去背单词吧</span>
+                </div>
+            </div>
+            <div class="tc">
+                <ul class="wordlist">
+
+                </ul>
+            </div>
+            <div class="tc">
+                <div id="box">
+                    <span class="iconfont icon-jihua"></span>
+                    <span>暂无已斩单词</span>
+                </div>
+            </div>
+        </div>  
+    </main>
+    <script src="./js/tab.js"></script>
+    <script>
+        function rap2(){
+        var url="http://rap2api.taobao.org/app/mock/308973/lwz"
+        var xhr = new XMLHttpRequest();
+            xhr.open("GET", url, true);
+            xhr.send();
+            xhr.onreadystatechange = function(){
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    var jarr=JSON.parse(xhr.responseText);
+                    insert(jarr);/* 自定义函数 */
+                }                
+            }
+            function insert(jarr){
+                var wordlist=document.querySelector(".wordlist");
+                jarr.forEach((v,i)=>{
+                    var nli=document.createElement("li");
+                    nli.innerHTML=`
+                    <span>${v.word}</span>
+                    <span>${v.meaning}</span>`;
+                    wordlist.appendChild(nli)
+                })
+            } 
+        }
+        rap2();
+    </script>
+</body>
+</html>

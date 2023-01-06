@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no, viewport-fit=cover">
+    <title>20001040622李婉甄 单词首页</title>
+    <link rel="stylesheet" href="./css/pub.css">
+    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./font/iconfont.css">
+    <style>
+        body{
+            background-color: #eee;
+        }
+        #top{
+            margin: 8px 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #top span:nth-of-type(1){
+            font-size: 22px;
+            flex-grow: 1;
+            width: 15%;
+            text-align: center;
+        }
+        #top div{
+            margin:10px auto;
+            border-radius: 20px;
+            color: #999;
+            background-color: #ddd;
+            width: 70%;
+            text-align: center;
+        }
+        #top span:nth-of-type(2){
+            font-size: 22px;
+            width: 15%;
+            text-align: center;
+        }
+        .word{
+            margin: 15px;
+            border-radius: 10px;
+            background-color: #fff;
+        }
+        .book{
+            display: flex;
+        }
+        .book img{
+            width: 20%;
+            margin: 10px;
+        }
+        .book div{
+            flex-grow: 1;
+        }
+        #name{
+            padding: 8px;
+        }
+        #name span:nth-of-type(1){
+            font-size: 20px;
+            font-weight: bold;
+        }
+        #name span:nth-of-type(2){
+            font-size: 16px;
+            color: #aaa;
+        }
+        #days{
+            padding: 8px;
+            font-size: 16px;
+            color: #ccc;
+            display: flex;
+        }
+        #days span:nth-of-type(2){
+            text-align: right;
+            flex-grow: 1;
+        }
+        .plan div:nth-of-type(1){
+            display: flex;
+            padding: 8px;
+        }
+        .plan div:nth-of-type(1) span:nth-of-type(1){
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .plan div:nth-of-type(1) span:nth-of-type(2){
+            font-size: 16px;
+            color: rgb(0, 104, 189);
+            flex-grow: 1;
+            text-align: right;
+        }
+        .plan ul{
+            display: flex;
+        }
+        .plan li{
+            margin: 8px;
+            width: 49%;
+        }
+        .plan li span{
+            font-size: 16px;
+        }
+        .plan li p{
+            font-size: 30px;
+            font-weight: bold;
+        }
+        .plan div:nth-of-type(2){
+            text-align: center;
+            font-size: 14px;
+            color: #ccc;
+        }
+        .plan button{
+            margin: 10px;
+            border: none;
+            border-radius: 10px;
+            background-color: rgb(4, 44, 246);
+            font-size: 20px;
+            color: #fff;
+            padding:10px 100px;
+        }
+        .alist{
+            display: flex;
+        }
+        .alist li{
+            background-color: #fff;
+            border-radius: 10px;
+            margin: 8px;
+            width: 24%;
+            display: flex;  
+            flex-wrap: wrap;
+            text-align: center;    
+        }
+        .alist span{
+            padding: 5px 0;
+            font-size: 40px;
+            flex-grow: 1;
+            width: 100%;
+        }
+        .alist p{
+            padding: 5px 0;
+            font-size: 18px;
+            flex-grow: 1;
+            width: 100%;
+        }
+        .blist li{
+            background-color: #fff;
+            border-radius: 10px;
+            margin: 15px;
+            display: flex;
+        }
+        .blist img{
+            width: 30%;
+            border-radius: 10px;
+            flex-grow: 1;
+        }
+        .blist div{
+            width: 70%;
+            padding: 8px 5px;
+        }
+        .blist span{
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .blist p{
+            padding-top: 8px;
+            font-size: 15px;
+            color: #999;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="top">
+            <span class="iconfont icon-jihua"></span>
+            <div>
+                <span class="iconfont icon-sousuo"></span>
+                <span>查词</span>
+            </div>
+            <span class="iconfont icon-xiaoxitongzhi"></span>
+        </div>
+    </header>
+    <section>
+        <div class="word">
+            <div class="book">
+                <img src="./img/01.jpg">
+                <div>
+                    <div id="name">
+                        <span>四级词汇大全</span>
+                        <span>修改 ></span>
+                    </div>
+                    <div id="days">
+                        <span>0/4440</span>
+                        <span>剩余444天</span>
+                    </div>
+                </div>
+            </div>
+            <div class="plan">
+                <div>
+                    <span>今日计划</span>
+                    <span>用我背单词，效率蹭蹭涨!</span>
+                </div>
+                <ul>
+                    <li>
+                        <span>需新学</span>
+                        <p>10词</p>
+                    </li>
+                    <li>
+                        <span>需复习</span>
+                        <p>0词</p>
+                    </li>
+                </ul>
+                <div>
+                    <span class="iconfont icon-sousuo"></span>
+                    <span>预计用时4分钟</span>
+                </div>
+                <button>开始背单词吧！</button>
+            </div>
+        </div>
+    </section>
+    <section>
+        <ul class="alist">
+            <li>
+                <span class="iconfont icon-xie"></span>
+                <p>单词训练</p>
+            </li>
+            <li>
+                <span class="iconfont icon-tushu"></span>
+                <p>单词本</p>
+            </li>
+            <li>
+                <span class="iconfont icon-chaxun"></span>
+                <p>真题查词</p>
+            </li>
+            <li>
+                <span class="iconfont icon-yuedu1"></span>
+                <p>爱阅读</p>
+            </li>
+        </ul>
+    </section>
+    <main>
+        <ul class="blist">
+            
+        </ul>
+    </main>
+    <nav id="nav">
+        <ul class="nlist">
+        </ul>
+    </nav>
+    <script src="./js/nav.js"></script>
+    <script>
+        var jarr=[{
+        title:"会数据分析 大学靠前站！",
+        main:"提前get高薪岗位的能力模型",
+        picture:"./img/02.jpg"
+    },{
+        title:"四六级高校提分计划",
+        main:"早晚免费学,抢占备考先机拒绝emo",
+        picture:"./img/03.jpg"
+    },{
+        title:"Python编程 新年学新语言",
+        main:"每天20分钟 零基础学第二门语言",
+        picture:"./img/04.jpg"
+    }]
+
+    function insert(){
+        var blist=document.querySelector(".blist");
+        jarr.forEach((v,i)=>{
+            var nli=document.createElement("li");
+            nli.innerHTML=`
+                <div>
+                    <span>${v.title}</span>
+                    <p>${v.main}</p>
+                </div>
+                <img src="${v.picture}">
+            `;
+            blist.appendChild(nli);
+        })
+    }
+    insert(jarr);
+
+    var book = document.querySelector('.book')
+            book.addEventListener('click', () => {
+            window.location.href='./wordlist.html'
+        })
+    </script>
+</body>
+</html>
